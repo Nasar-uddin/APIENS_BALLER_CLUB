@@ -1,0 +1,39 @@
+@import "../../styles/utilities/variables";
+
+.roadmap {
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    background: url('../../../public/images/roadmap-bg.jpg');
+    background-size: 100% 100%;
+    background-position-y: 250px;
+    background-repeat: no-repeat;
+    padding: 0 40px;
+}
+
+.step {
+    position: relative;
+    background: linear-gradient(262.31deg, rgba(255, 255, 255, 0.1) 0.27%, rgba(255, 255, 255, 0) 99.02%);
+    border: 1px solid #404040;
+    border-radius: 16px;
+    // padding: 64px 64px 64px 160px;
+    padding: 4rem;
+    margin-bottom: 1rem;
+
+    h3 {
+        span {
+            color: $heading-text;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-sm) {
+    .roadmap {
+        padding: 0;
+    }
+
+    .step {
+        padding: 2rem;
+    }
+}

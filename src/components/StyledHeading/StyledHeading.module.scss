@@ -1,0 +1,25 @@
+@import "../../styles/utilities/variables";
+
+.styledHeading {
+    margin-bottom: 1rem;
+}
+
+.titleText {
+    font-size: 1.5rem;
+    color: $heading-text;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.lineOne {
+    height: 2px;
+    width: 200px;
+    background: linear-gradient(90deg, $heading-text, transparent);
+}
+
+.lineTwo {
+    margin-top: 0.4rem;
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(90deg, $heading-text, transparent);
+}
