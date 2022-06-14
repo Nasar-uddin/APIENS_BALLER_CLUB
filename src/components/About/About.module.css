@@ -1,0 +1,23 @@
+.about {
+  margin-top: 7.5rem;
+}
+
+.aboutImage {
+  position: relative;
+  padding-top: 9rem;
+  text-align: center;
+  background-image: url("../../../public/images/about-bg.jpg");
+  background-size: cover;
+  background-position: 100% center;
+  margin-left: -1rem;
+}
+
+.aboutImage div {
+  position: absolute;
+  bottom: 0;
+  height: 35%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9));
+}
+/*# sourceMappingURL=About.module.css.map */

@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  width: 100%;
+  z-index: 99;
+  background: black;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navBrand .navLink {
+  font-weight: bold;
+  color: #ffb800;
+  cursor: pointer;
+}
+
+.mainNav ul {
+  list-style: none;
+}
+
+.mainNav ul li a {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.mainNav ul li a.navLink {
+  color: #fff;
+  cursor: pointer;
+}
+
+.socials a i {
+  font-size: 1.3rem;
+}
+
+.socials a i:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navToggle {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.navToggle i {
+  cursor: pointer;
+  color: #fff;
+}
+
+.mobileNav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.mobileNav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mobileNav .navClose {
+  text-align: right;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.mobileNav .navClose i {
+  cursor: pointer;
+  color: #fff;
+}
+
+.mobileNav nav ul {
+  list-style: none;
+}
+
+.mobileNav nav ul li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobileNav nav ul li:first-child {
+  padding-top: 0;
+}
+
+.mobileNav nav ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mobileNav .socials {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+}
+
+@media (max-width: 1199px) {
+  .mainNav {
+    display: none;
+  }
+  .socials {
+    margin-right: 3rem;
+  }
+  .navToggle {
+    display: block;
+  }
+  .mobileNav:global(.show) {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=Navbar.module.css.map */

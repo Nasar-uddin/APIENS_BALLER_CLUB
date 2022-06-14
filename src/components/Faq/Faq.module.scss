@@ -1,0 +1,76 @@
+@import "../../styles/utilities/variables";
+
+.faqSection {
+	margin-top: 9rem;
+}
+
+:global(.accordion) {
+	--bs-accordion-border-radius: 0;
+	--bs-accordion-color: $primary-text;
+	--bs-accordion-bg: $primary-color;
+	--bs-accordion-border-color: $primary-color;
+
+	:global(.accordion-item:first-of-type) {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		padding-top: 0;
+
+		:global(button) {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+
+	:global(.accordion-item:last-of-type) {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+		:global(button.collapsed) {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
+
+:global(.accordion-body) {
+	color: $primary-text;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+:global(.accordion-item) {
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid $heading-text;
+
+	h2 {
+		button {
+			font-size: 1.25rem;
+			font-weight: 500;
+			color: $primary-text;
+			padding-left: 0;
+
+			i {
+				transition: 0.3s;
+			}
+
+			&:not(:global(.collapsed)) {
+				background: $primary-color;
+				color: $primary-text;
+
+				i {
+					transform: rotate(-180deg);
+				}
+			}
+
+			&:focus {
+				border-color: transparent;
+				box-shadow: none;
+			}
+
+			&::after {
+				content: none;
+			}
+		}
+	}
+}

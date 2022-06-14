@@ -1,0 +1,41 @@
+@import "./variables";
+
+.button {
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cbtn-sm {
+  @extend .button;
+  background: $primary-text  !important;
+  color: $primary-color  !important;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.cbtn-lg {
+  @extend .button;
+  background: $primary-text  !important;
+  color: $primary-color  !important;
+  padding: 0.8rem 2rem;
+  font-size: 1.25rem;
+}
+
+.discord-btn {
+  @extend .button;
+  background: #586aea;
+  color: $primary-text;
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.4s;
+
+  &:hover {
+    box-shadow: inset 205px 0 0 #fff;
+    color: $primary-color;
+  }
+}

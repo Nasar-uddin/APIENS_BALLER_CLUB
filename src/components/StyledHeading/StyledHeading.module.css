@@ -1,0 +1,26 @@
+.styledHeading {
+  margin-bottom: 1rem;
+}
+
+.titleText {
+  font-size: 1.5rem;
+  color: #ffb800;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.lineOne {
+  height: 2px;
+  width: 200px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffb800), to(transparent));
+  background: linear-gradient(90deg, #ffb800, transparent);
+}
+
+.lineTwo {
+  margin-top: 0.4rem;
+  height: 2px;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffb800), to(transparent));
+  background: linear-gradient(90deg, #ffb800, transparent);
+}
+/*# sourceMappingURL=StyledHeading.module.css.map */

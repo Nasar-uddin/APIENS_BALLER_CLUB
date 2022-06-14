@@ -1,0 +1,151 @@
+@import "../../styles/utilities/variables";
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    z-index: 99;
+    background: $primary-color;
+
+    a {
+        text-decoration: none;
+        color: $primary-text;
+    }
+
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.navBrand {
+    .navLink {
+        font-weight: bold;
+        color: $heading-text;
+        cursor: pointer;
+    }
+}
+
+.mainNav {
+    ul {
+        list-style: none;
+
+        li {
+            a {
+                font-weight: 600;
+                font-size: 0.85rem;
+
+                &.navLink {
+                    color: $primary-text;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.socials {
+
+    a {
+        i {
+            font-size: 1.3rem;
+
+            &:hover {
+                color: rgba($color: #fff, $alpha: 0.7)
+            }
+
+        }
+
+    }
+}
+
+.navToggle {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    i {
+        cursor: pointer;
+        color: $primary-text;
+    }
+}
+
+.mobileNav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $primary-color;
+    transition: 0.5s;
+    transform: translateX(100%);
+
+    a {
+        color: $primary-text;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .navClose {
+        text-align: right;
+        padding: 2rem;
+        padding-bottom: 1rem;
+
+        i {
+            cursor: pointer;
+            color: $primary-text;
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                padding: 1.5rem 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                a {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 3rem;
+        right: 0;
+    }
+
+}
+
+@media(max-width: $breakpoint-xl) {
+    .mainNav {
+        display: none;
+    }
+
+    .socials {
+        margin-right: 3rem;
+    }
+
+    .navToggle {
+        display: block;
+    }
+
+    .mobileNav {
+        &:global(.show) {
+            transform: translateX(0);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../styles/utilities/variables";
+
+.features {
+    margin-top: 9rem;
+}
+
+.featureImage {
+    position: relative;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    div {
+        position: absolute;
+        bottom: 0;
+        height: 35%;
+        width: 100%;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .9));
+    }
+}
