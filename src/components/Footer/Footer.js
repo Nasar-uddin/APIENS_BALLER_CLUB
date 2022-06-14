@@ -21,16 +21,16 @@ const Footer = () => {
         </div>
       </div>
       <footer>
-        <p>©All rights reserved. 2022</p>
-        <div
-          className={`${styles.socials} d-flex align-items-center d-none d-sm-block`}
-        >
-          <a href="twitter.com" className="me-3">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a href="instagram.com" className="me-3">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
+        <div className={styles.footerContent}>
+          <p>©All rights reserved. 2022</p>
+          <div className={`${styles.socials} d-flex align-items-center`}>
+            <a href="twitter.com" className="me-3">
+              <i className="fa-brands fa-twitter"></i>
+            </a>
+            <a href="instagram.com" className="me-3">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
