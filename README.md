@@ -5,3 +5,7 @@
 `npm install`
 
 `npm start`
+
+## To change fabicon replace `public/images/fabicon.png`
+
+## To change navbar logo replace `public/images/nav-logo.png`

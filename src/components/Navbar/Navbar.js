@@ -26,9 +26,7 @@ const Navbar = () => {
         <nav className="d-flex justify-content-between align-items-center h-100">
           <div className={`${styles.navBrand} text-center`}>
             <Link offset={-100} to="intro" className={styles.navLink}>
-              APIENS BALLER
-              <br />
-              CLUB
+              <img src="./images/nav-logo.png" alt="brand logo" height={45}/>
             </Link>
           </div>
           <div className={styles.mainNav}>
