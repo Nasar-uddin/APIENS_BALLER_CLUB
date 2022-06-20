@@ -7,33 +7,12 @@
 }
 
 .artist {
-    // .artistImg {
-    //     max-width: 329px;
-    //     width: 100%;
-    // }
 
     h3 {
         font-size: 1.25rem;
-        margin-bottom: 2rem;
 
         span {
             font-size: 1.5rem;
-        }
-    }
-}
-
-.connect {
-    a {
-        font-size: 1.5rem;
-        background: $primary-text;
-        border-radius: 5px;
-        padding: 0.2rem 0.4rem;
-        border: 1px solid $primary-text;
-        color: $primary-color;
-
-        &:hover {
-            background: $primary-color;
-            color: $primary-text;
         }
     }
 }
@@ -46,6 +25,6 @@
 
 @media (max-width: $breakpoint-sm) {
     .artists {
-        padding: 2rem;
+        padding: 1rem;
     }
 }

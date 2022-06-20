@@ -1,0 +1,91 @@
+.intro {
+  height: 92vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  position: relative;
+}
+
+.introText {
+  z-index: 2;
+  height: 30%;
+  width: 100%;
+  max-width: 738px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.introText h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.introText h1 span {
+  color: #ffb800;
+}
+
+.introText p {
+  margin: 1.5rem 0;
+}
+
+.introBG {
+  position: absolute;
+  max-width: 1440px;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introBG img {
+  height: auto;
+  width: 100%;
+}
+
+.downArrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.downArrow i {
+  color: #ffb800;
+}
+
+@media (max-width: 992px) {
+  .introBG {
+    height: 480px;
+    width: 100%;
+  }
+  .introBG img {
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=Intro.module.css.map */

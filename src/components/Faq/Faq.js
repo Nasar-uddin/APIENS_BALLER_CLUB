@@ -61,34 +61,7 @@ const Faq = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  You will be able to buy on our website when we launch. Join
-                  our discord to have more information about our launch date.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
-                <button
-                  className="accordion-button collapsed justify-content-between align-items-start"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <span>WHAT DOES “MINT” MEAN?</span>
-                  <i className="fa-solid fa-angle-down"></i>
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#faqAccordion"
-              >
-                <div className="accordion-body">
-                  NFT Minting is the process by which your digital art or
-                  digital content becomes a part of the Ethereum blockchain.
+                  You can mint your Apiens Baller through our website
                 </div>
               </div>
             </div>
@@ -112,9 +85,7 @@ const Faq = () => {
                 aria-labelledby="headingFour"
                 data-bs-parent="#faqAccordion"
               >
-                <div className="accordion-body">
-                  The Price of Minting and Sale will be announced soon.
-                </div>
+                <div className="accordion-body">Mint Price is : 0.038 ETH</div>
               </div>
             </div>
             <div className="accordion-item">
