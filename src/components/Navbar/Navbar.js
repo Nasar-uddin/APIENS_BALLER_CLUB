@@ -26,7 +26,8 @@ const Navbar = () => {
         <nav className="d-flex justify-content-between align-items-center h-100">
           <div className={`${styles.navBrand} text-center ms-3`}>
             <Link offset={-100} to="intro" className={styles.navLink}>
-              <img src="./images/nav-logo.png" alt="brand logo" height={45} />
+              <img src="./images/nav-logo.png" alt="brand logo" height={45} />{" "}
+              APIENS
             </Link>
           </div>
           <div className={styles.mainNav}>
