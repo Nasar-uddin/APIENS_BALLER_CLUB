@@ -1,6 +1,6 @@
 {
   "name": "apiens_baller_club",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.8",

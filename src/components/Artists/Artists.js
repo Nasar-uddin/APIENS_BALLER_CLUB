@@ -17,7 +17,7 @@ const Artists = () => {
                 <div className="col-sm-5">
                   <div className={`${styles.artistImg} mb-3`}>
                     <img
-                      src="./images/artist-2.jpg"
+                      src="./images/artist.png"
                       alt="Artist"
                       className="w-100"
                     />

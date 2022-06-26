@@ -9,7 +9,7 @@ const Features = () => {
         <div className="row">
           <div className="col-lg-6 order-1 order-lg-0">
             <div className={styles.featureImage}>
-              <img src="./images/img-10.jpg" alt="Feature-Bg" />
+              <img src="./images/img-10.png" alt="Feature-Bg" />
               <div></div>
             </div>
           </div>
