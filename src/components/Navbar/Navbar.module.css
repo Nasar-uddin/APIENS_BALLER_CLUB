@@ -13,13 +13,19 @@
 }
 
 .header nav {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-.navBrand a {
+.navBrand .navLink {
+  font-size: 1.5rem;
   font-weight: bold;
   color: #ffb800;
+  cursor: pointer;
+}
+
+.navBrand .navLink img {
+  border-radius: 5px;
 }
 
 .mainNav ul {
@@ -28,15 +34,16 @@
 
 .mainNav ul li a {
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 1.25rem;
 }
 
-.socials a i {
-  font-size: 1.3rem;
+.mainNav ul li a.navLink {
+  color: #fff;
+  cursor: pointer;
 }
 
-.socials a i:hover {
-  color: rgba(255, 255, 255, 0.7);
+.socials a img {
+  width: 2rem;
 }
 
 .navToggle {
@@ -71,6 +78,7 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .mobileNav .navClose {

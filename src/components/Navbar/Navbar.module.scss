@@ -14,15 +14,20 @@
     }
 
     nav {
-        max-width: 1200px;
+        max-width: 1440px;
         margin: 0 auto;
     }
 }
 
 .navBrand {
-    a {
+    .navLink {
+        font-size: 1.5rem;
         font-weight: bold;
         color: $heading-text;
+        cursor: pointer;
+        img{
+            border-radius: 5px;
+        }
     }
 }
 
@@ -33,7 +38,12 @@
         li {
             a {
                 font-weight: 600;
-                font-size: 0.85rem;
+                font-size: 1.25rem;
+
+                &.navLink {
+                    color: $primary-text;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -42,13 +52,8 @@
 .socials {
 
     a {
-        i {
-            font-size: 1.3rem;
-
-            &:hover {
-                color: rgba($color: #fff, $alpha: 0.7)
-            }
-
+        img {
+            width: 2rem;
         }
 
     }
@@ -82,6 +87,7 @@
         color: $primary-text;
         text-decoration: none;
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     .navClose {
@@ -101,7 +107,7 @@
 
             li {
                 padding: 1.5rem 0;
-                border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
                 &:first-child {
                     padding-top: 0;

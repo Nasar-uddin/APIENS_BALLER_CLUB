@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import styles from "./Navbar.module.scss";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,29 +13,34 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { title: "About", target: "#about" },
-    { title: "Features", target: "#features" },
-    { title: "Roadmap", target: "#roadmap" },
-    { title: "Artists", target: "#artists" },
-    { title: "FAQ", target: "#faq" },
+    { title: "About", target: "about" },
+    { title: "Features", target: "features" },
+    { title: "Roadmap", target: "roadmap" },
+    { title: "Artists", target: "artists" },
+    { title: "FAQ", target: "faq" },
   ];
 
   return (
     <div className="main-header">
       <header className={`${styles.header}`}>
         <nav className="d-flex justify-content-between align-items-center h-100">
-          <div className={`${styles.navBrand} text-center`}>
-            <a href="#home" className="ms-3 ms-xl-0">
-              APIENS BALLER
-              <br />
-              CLUB
-            </a>
+          <div className={`${styles.navBrand} text-center ms-3`}>
+            <Link offset={-100} to="intro" className={styles.navLink}>
+              <img src="./images/01.png" alt="brand logo" height={45} />{" "}
+              APIENS
+            </Link>
           </div>
           <div className={styles.mainNav}>
             <ul className="d-flex ps-0 mb-0">
               {navItems.map((item, index) => (
                 <li key={index} className="me-4">
-                  <a href={item.target}>{item.title}</a>
+                  <Link
+                    offset={-100}
+                    to={item.target}
+                    className={styles.navLink}
+                  >
+                    {item.title}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -42,17 +48,14 @@ const Navbar = () => {
           <div
             className={`${styles.socials} d-flex align-items-center d-none d-sm-block`}
           >
-            <a href="discord.gg" className="me-3">
-              <i className="fa-brands fa-discord"></i>
+            <a href="#nolink" className="me-3">
+              <img src="./images/discord.png" alt="" />
             </a>
-            <a href="twitter.com" className="me-3">
-              <i className="fa-brands fa-twitter"></i>
+            <a href="#nolink" className="me-3">
+              <img src="./images/opensea.png" alt="" />
             </a>
-            <a href="instagram.com" className="me-3">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#nolink" className="me-3 cbtn-sm">
-              APIENS
+            <a href="#nolink" className="me-3">
+              <img src="./images/twitter.png" alt="" />
             </a>
           </div>
           <div className={styles.navToggle}>
@@ -69,27 +72,31 @@ const Navbar = () => {
           <ul className="ps-0 mb-0">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.target} onClick={closeNav}>
+                <Link
+                  offset={-100}
+                  to={item.target}
+                  className={styles.navLink}
+                  onClick={closeNav}
+                >
                   {item.title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <div className={`${styles.socials} d-flex align-items-center`}>
-          <a href="discord.gg" className="me-3">
-            <i className="fa-brands fa-discord"></i>
-          </a>
-          <a href="twitter.com" className="me-3">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a href="instagram.com" className="me-3">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#nolink" className="cbtn-sm">
-            APIENS
-          </a>
-        </div>
+        <div
+            className={`${styles.socials} d-flex align-items-center`}
+          >
+            <a href="#nolink" className="me-3">
+              <img src="./images/discord.png" alt="" />
+            </a>
+            <a href="#nolink" className="me-3">
+              <img src="./images/opensea.png" alt="" />
+            </a>
+            <a href="#nolink" className="me-3">
+              <img src="./images/twitter.png" alt="" />
+            </a>
+          </div>
       </div>
     </div>
   );

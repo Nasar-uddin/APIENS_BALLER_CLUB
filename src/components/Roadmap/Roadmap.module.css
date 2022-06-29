@@ -15,7 +15,8 @@
 
 .step {
   position: relative;
-  background: linear-gradient(262.31deg, rgba(255, 255, 255, 0.1) 0.27%, rgba(255, 255, 255, 0) 99.02%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.1)), to(transparent));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.1), transparent);
   border: 1px solid #404040;
   border-radius: 16px;
   padding: 4rem;

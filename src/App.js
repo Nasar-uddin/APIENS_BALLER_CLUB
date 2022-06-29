@@ -20,8 +20,8 @@ function App() {
         <Artists />
         <Gallery />
         <Faq />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
