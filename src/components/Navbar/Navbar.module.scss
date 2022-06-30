@@ -25,6 +25,9 @@
         font-weight: bold;
         color: $heading-text;
         cursor: pointer;
+        img{
+            border-radius: 5px;
+        }
     }
 }
 
@@ -49,13 +52,8 @@
 .socials {
 
     a {
-        i {
-            font-size: 1.3rem;
-
-            &:hover {
-                color: rgba($color: #fff, $alpha: 0.7)
-            }
-
+        img {
+            width: 2rem;
         }
 
     }

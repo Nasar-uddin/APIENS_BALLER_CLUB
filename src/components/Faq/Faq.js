@@ -88,34 +88,6 @@ const Faq = () => {
                 <div className="accordion-body">Mint Price is : 0.038 ETH</div>
               </div>
             </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFive">
-                <button
-                  className="accordion-button collapsed justify-content-between align-items-start"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  <span>WHY DID YOU CHOOSE APIENS?</span>
-                  <i className="fa-solid fa-angle-down"></i>
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#faqAccordion"
-              >
-                <div className="accordion-body">
-                  Renowned artists Ricardo Cesar & Enrique Mateo-Sagasta have
-                  after weeks of work decided to use their knowledge and
-                  experience with major studios to bring a project that has
-                  never be seen before to the NFT space.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

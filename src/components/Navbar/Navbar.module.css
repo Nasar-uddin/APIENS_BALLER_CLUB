@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.navBrand .navLink img {
+  border-radius: 5px;
+}
+
 .mainNav ul {
   list-style: none;
 }
@@ -38,12 +42,8 @@
   cursor: pointer;
 }
 
-.socials a i {
-  font-size: 1.3rem;
-}
-
-.socials a i:hover {
-  color: rgba(255, 255, 255, 0.7);
+.socials a img {
+  width: 2rem;
 }
 
 .navToggle {

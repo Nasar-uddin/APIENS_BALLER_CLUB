@@ -48,17 +48,14 @@ const Navbar = () => {
           <div
             className={`${styles.socials} d-flex align-items-center d-none d-sm-block`}
           >
-            <a href="discord.gg" className="me-3">
-              <i className="fa-brands fa-discord"></i>
+            <a href="#nolink" className="me-3">
+              <img src="./images/discord.png" alt="" />
             </a>
-            <a href="twitter.com" className="me-3">
-              <i className="fa-brands fa-twitter"></i>
+            <a href="#nolink" className="me-3">
+              <img src="./images/opensea.png" alt="" />
             </a>
-            <a href="instagram.com" className="me-3">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#nolink" className="me-3 cbtn-sm">
-              Opensea
+            <a href="#nolink" className="me-3">
+              <img src="./images/twitter.png" alt="" />
             </a>
           </div>
           <div className={styles.navToggle}>
@@ -87,20 +84,19 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className={`${styles.socials} d-flex align-items-center`}>
-          <a href="discord.gg" className="me-3">
-            <i className="fa-brands fa-discord"></i>
-          </a>
-          <a href="twitter.com" className="me-3">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a href="instagram.com" className="me-3">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#nolink" className="cbtn-sm">
-            Opensea
-          </a>
-        </div>
+        <div
+            className={`${styles.socials} d-flex align-items-center`}
+          >
+            <a href="#nolink" className="me-3">
+              <img src="./images/discord.png" alt="" />
+            </a>
+            <a href="#nolink" className="me-3">
+              <img src="./images/opensea.png" alt="" />
+            </a>
+            <a href="#nolink" className="me-3">
+              <img src="./images/twitter.png" alt="" />
+            </a>
+          </div>
       </div>
     </div>
   );
