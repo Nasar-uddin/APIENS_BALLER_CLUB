@@ -48,13 +48,13 @@ const Navbar = () => {
           <div
             className={`${styles.socials} d-flex align-items-center d-none d-sm-block`}
           >
-            <a href="#nolink" className="me-3">
+            <a href="https://discord.com" target="_blank" className="me-3" rel="noreferrer">
               <img src="./images/discord.png" alt="" />
             </a>
-            <a href="#nolink" className="me-3">
+            <a href="https://opensea.io" target="_blank" className="me-3" rel="noreferrer">
               <img src="./images/opensea.png" alt="" />
             </a>
-            <a href="#nolink" className="me-3">
+            <a href="https://twitter.com" target="_blank"  className="me-3" rel="noreferrer">
               <img src="./images/twitter.png" alt="" />
             </a>
           </div>
