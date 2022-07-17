@@ -46,16 +46,16 @@ const Navbar = () => {
             </ul>
           </div>
           <div
-            className={`${styles.socials} d-flex align-items-center d-none d-sm-block`}
+            className={`${styles.socials} d-flex align-items-center`}
           >
-            <a href="https://discord.com" target="_blank" className="me-3" rel="noreferrer">
-              <img src="./images/discord.png" alt="" />
+            <a href="https://twitter.com" target="_blank"  className="me-3" rel="noreferrer">
+              <img src="./images/twitter.png" alt="" />
             </a>
             <a href="https://opensea.io" target="_blank" className="me-3" rel="noreferrer">
               <img src="./images/opensea.png" alt="" />
             </a>
-            <a href="https://twitter.com" target="_blank"  className="me-3" rel="noreferrer">
-              <img src="./images/twitter.png" alt="" />
+            <a href="https://discord.com" target="_blank" className="me-3" rel="noreferrer">
+              <img src="./images/discord.png" alt="" />
             </a>
           </div>
           <div className={styles.navToggle}>
